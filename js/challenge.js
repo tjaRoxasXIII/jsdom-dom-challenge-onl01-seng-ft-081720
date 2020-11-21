@@ -28,7 +28,9 @@ document.getElementById("minus").addEventListener("click", function() {
 document.getElementById("heart").addEventListener("click", function() {
     let ul = document.querySelector("ul")
     let newLi = document.createElement("li")
-    newLi.appendChild(document.createTextNode(`${counter} has a new like!`)) 
+    let likes = 1
+    likes += 1
+    newLi.appendChild(document.createTextNode(`${counter} has ${likes} like!`)) 
     ul.appendChild(newLi)
 });
 
@@ -53,5 +55,5 @@ document.getElementById("pause").addEventListener("click", function() {
     }   
 });
 
-
+// Pausing and submitting here.  The lab is expecting far too much for the small number of resources we've been provided
 
